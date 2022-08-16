@@ -1,0 +1,9 @@
+/*--------PAGES NOSOTROS----------*/
+.nosotros_contenedor {
+  max-width: 80%;
+}
+
+.text_creador {
+  @include textos_nosotros_pg;
+}
+/****** FIN PAGINA NOSOTROS ******/

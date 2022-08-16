@@ -1,0 +1,167 @@
+
+/****PAGES GALERIA TEMATICA****/
+
+/* MOBILE FIRST */
+main .textos_main_galeria_tematica {
+  margin-top: 50px;
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.textos_main_galeria_tematica h2 {
+  font-family: $font-family-titulos-pg;
+  font-style: $font-style-titulos-pg;
+  font-weight: $font-weight-titulos-pg;
+  font-size: $font-size-titulos-pg-cel;
+  color: $font-color-titulos-pg;
+}
+
+.textos_main_galeria_tematica h3 {
+  font-family: $font-family-titulos-pg;
+  font-style: $font-style-titulos-pg;
+  font-weight: $font-weight-titulos-pg;
+  font-size: $font-size-titulos-pg-cel;
+  color: $font-color-titulos-pg;
+  text-shadow: $font-shadow-titulos-pg;
+  text-align: $font-align-text-pg;
+}
+
+#galeria_tematica {
+  grid-area: novedades;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.title_galeria_tematica {
+  text-align: $font-aling-sbtitulos-pg;
+  color: $font-color-sbtitulos-pg;
+  margin: $font-margin-sbtitulos-pg;
+  font-family: $font-family-sbtitulos-pg;
+  font-style: $font-style-sbtitulos-pg;
+  font-weight: $font-weight-sbtitulos-pg;
+  font-size: $font-size-sbtitulos-pg-cel;
+}
+
+.galeria_tematica_contenedor {
+  @include gal_tem_cont(100%);
+}
+
+.galeria_tematica_contenedor .card_galeria_tematica {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.45s;
+}
+
+.card_galeria_tematica {
+  background-color: rgba(226, 216, 204, 0.89);
+  padding: 1%;
+}
+
+.galeria_tematica_contenedor .card_galeria_tematica:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.galeria_tematica_contenedor .card_galeria_tematica img {
+  width: 250px;
+  height: 220px;
+  border-radius: 10px;
+}
+
+.galeria_tematica_contenedor.card_galeria_tematica h4 {
+  font-weight: 600;
+}
+
+.galeria_tematica_contenedor .card_galeria_tematica p {
+  padding: 0.1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.subtexto_contenedor_galeria {
+  display: inline-block;
+  width: 100%;
+  min-height: 75px;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+  background-color: rgba(226, 216, 204, 0.89);
+  margin-bottom: 1px;
+  padding: 15px;
+}
+
+.subtexto_contenedor_galeria h4 {
+  font-family: $font-color-text-pg;
+  font-style: $font-style-text-pg;
+  font-weight: $font-weight-text-pg;
+  font-size: $font-size-text-pg-cel;
+  color: $font-color-text-pg;
+}
+
+.subtexto_contenedor_galeria p {
+  font-family: $font-family-ptext-pg;
+  font-style: $font-style-ptext-pg;
+  font-weight: $font-weight-ptext-pg;
+  font-size: $font-size-ptext-pg-cel;
+  color: $font-color-ptext-pg;
+}
+
+@media (min-width: 768px) {
+  .textos_main_galeria_tematica h2 {
+    font-size: $font-size-sbtitulos-pg-768;
+  }
+
+  .textos_main_galeria_tematica h3 {
+    font-size: $font-size-sbtitulos-pg-768;
+  }
+
+  .title_galeria_tematica {
+    font-size: 40px;
+  }
+
+  .subtexto_contenedor_galeria h4 {
+    font-size: $font-size-text-pg-768;
+  }
+  .subtexto_contenedor_galeria p {
+    font-size: $font-size-ptext-pg-768;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textos_main_galeria_tematica h2 {
+    font-size: $font-size-titulos-pg-1024;
+  }
+
+  .textos_main_galeria_tematica h3 {
+    font-size: $font-size-sbtitulos-pg-1024;
+  }
+
+  .title_galeria_tematica {
+    font-size: 50px;
+  }
+
+  .subtexto_contenedor_galeria h4 {
+    font-size: $font-size-text-pg-1024;
+  }
+  .subtexto_contenedor_galeria p {
+    font-size: $font-size-ptext-pg-1024;
+  }
+}
+
+/****** FIN PAGINA GALERIA_TEMATICA ******/

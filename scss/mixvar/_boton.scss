@@ -1,0 +1,38 @@
+
+/*--boton todas las pages--*/
+
+.boton_generico {
+  border: solid 2px #b73413;
+  margin-top: 1px;
+  font-family: $font-family-main;
+  font-style: $font-style-main;
+  font-weight: $font-weight-main;
+  font-size: 20px;
+}
+
+.boton_main,
+.boton_card {
+  @extend .boton_generico;
+}
+
+.boton_main {
+  -webkit-text-stroke: 0.1px black;
+}
+
+.boton_card {
+  border: solid 1px black;
+  font-weight: 200;
+}
+
+@media (min-width: 768px) {
+  .boton_main {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .boton_main {
+    font-size: 35px;
+    padding: 3;
+  }
+}

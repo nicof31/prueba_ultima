@@ -1,0 +1,248 @@
+/****** INICIO PAGINA PRINCPAL (INDEX) ******/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.paddingTB {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.col-lg-12,
+.col-lg-6 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.paddingT {
+  padding-top: 50px;
+}
+.centrar {
+  text-align: center;
+}
+.paddingLR {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#navbarNavAltMarkup a {
+  color: $font-color-nav;
+  font-family: $font-family-nav;
+  font-style: $font-style-nav;
+  font-weight: $font-weight-nav;
+}
+
+#navbarNavAltMarkup a:hover:not(.active) {
+  border-bottom: solid 3px white;
+  transition: 0.5s;
+}
+
+.navbar-toggler {
+  background-color: beige;
+  font-size: 0.5rem;
+}
+
+.logo_cucina {
+  width: 200px;
+  height: 40px;
+}
+
+/**-----ANIMACION LOGO-----**/
+.logo_cucina {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: backInLeft;
+  animation-duration: 1.8s;
+}
+/**----------------------**/
+
+/* vista desktop */
+@media only screen and (min-width: 1024px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+#grid_index {
+  display: grid;
+  grid-template-areas:
+    "cabecera"
+    "principal"
+    "novedades"
+    "footer";
+}
+
+/*main*/
+
+main {
+  grid-area: principal;
+}
+
+#main_principal {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagenes/imagen2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.text_main h1 {
+  font-family: $font-family-main;
+  font-style: $font-style-main;
+  font-weight: $font-weight-main;
+  font-size: 40px;
+  color: $font-color-main;
+}
+
+.text_main h3 {
+  font-family: $font-family-main;
+  font-style: $font-style-main;
+  font-weight: $font-weight-main;
+  font-size: 35px;
+  color: $font-color-main;
+}
+
+.text_main {
+  animation: fadeInUp;
+  animation-duration: 3s;
+}
+
+/*Novedades*/
+
+.card_content {
+  margin: 4%;
+}
+
+@media (min-width: 768px) {
+  .card_content {
+    margin: 0;
+  }
+}
+
+.title_novedades {
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  text-align: $font-aling-titulos-itermedios;
+  margin: $font-margin-titulos-itermedios;
+  font-size: $font-size-titulos-itermedios;
+  color: $font-color-titulos-itermedios;
+  font-weight: $font-weight-titulos-itermedios;
+  font-family: font-family-titulos-itermedios;
+  margin: 4%;
+}
+
+.title_novedades h3 {
+  font-family: font-family-titulos-itermedios;
+  font-style: $font-style-titulos-itermedios;
+  font-weight: $font-weight-titulos-itermedios;
+}
+
+.fondo_content {
+  background-color: #eee;
+}
+
+.col img {
+  width: 100%;
+  height: 100%;
+  max-width: 30rem;
+  max-height: 35rem;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  #grid_index {
+    grid-template-areas:
+      "cabecera cabecera cabecera"
+      "principal principal principal"
+      "novedades novedades"
+      "footer footer";
+  }
+
+  .title_novedades {
+    margin: 2%;
+  }
+
+  .logo_cucina {
+    width: auto;
+    height: 50px;
+  }
+
+  .text_main h1 {
+    -webkit-text-stroke: $font-webkit-text-stroke-main;
+    font-size: 60px;
+    font-style: $font-style-responsive-main;
+  }
+
+  .text_main h3 {
+    -webkit-text-stroke: $font-webkit-text-stroke-main;
+    font-size: 50px;
+    font-style: $font-style-responsive-main;
+  }
+
+  .title_novedades h3 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo_cucina {
+    height: 70px;
+  }
+
+  .text_main h1 {
+    font-size: 80px;
+  }
+
+  .text_main h3 {
+    font-size: 70px;
+  }
+
+  .title_novedades h3 {
+    font-size: 80px;
+  }
+}
+
+/*footer*/
+
+#footer_boot {
+  background-color: black;
+  font-family: $font-family-footer;
+  font-style: $font-style-footer;
+  font-weight: $font-weight-footer;
+}
+
+#icono_footer {
+  font-size: 25px;
+  color: #fff;
+  padding: 10px;
+}
+
+.icono_footer a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-size: 25px;
+  & i:hover {
+    color: orangered;
+    transform: scale(1.1);
+    transition: ease-in-out 0.1s;
+  }
+}
+
+/****** FIN PAGINA PRINCPAL (INDEX) ******/

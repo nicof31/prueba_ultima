@@ -1,0 +1,11 @@
+/*--------PAGES COMENTARIOS----------*/
+.comentario_fondo {
+  background-color: #eee;
+}
+
+/*Variables comentarios*/
+.text_comentario {
+  @include textos_comentarios_pg;
+}
+
+/*--------FIN PAGES COMENTARIOS----------*/

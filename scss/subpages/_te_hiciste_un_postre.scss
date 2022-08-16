@@ -1,0 +1,28 @@
+
+/****** SUB PAGES TE HICISTE UN POSTRE ******/
+
+/* MOBILE FIRST */
+
+main .textos_main_hiciste_un_postre {
+  display: map-get($estilos_textos_subpage, display);
+  width: map-get($estilos_textos_subpage, width);
+  height: map-get($estilos_textos_subpage, height);
+  align-items: map-get($estilos_textos_subpage, align-items);
+  justify-content: map-get($estilos_textos_subpage, justify-content);
+  flex-direction: map-get($estilos_textos_subpage, flex-direction);
+  letter-spacing: map-get($estilos_textos_subpage, letter-spacing);
+  line-height: map-get($estilos_textos_subpage, line-height);
+  position: map-get($estilos_textos_subpage, position);
+  overflow: map-get($estilos_textos_subpage, overflow);
+}
+
+.img_main_hiciste_un_postre {
+  @include img_main_subpage;
+  background-image: url(../imagenes/imagen20.webp);
+}
+
+.textos_main_hiciste_un_postre h2 {
+  @include title_main_subpages;
+}
+
+/****** SUB PAGES ******/

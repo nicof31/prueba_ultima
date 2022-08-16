@@ -1,0 +1,173 @@
+
+/****PAGES -RECETARIOS-****/
+
+/* MOBILE FIRST */
+
+#body_recetario {
+    background-image: linear-gradient(
+      to right,
+      #f3f4f6,
+      #f2f5f8,
+      #f1f6f9,
+      #eff7f9,
+      #eef8f9
+    );
+  }
+  
+  main .textos_main_recetario {
+    margin-top: 50px;
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: $font-aling-titulos-pg;
+  }
+  
+  .textos_main_recetario h2 {
+    font-family: $font-family-titulos-pg;
+    font-style: $font-style-titulos-pg;
+    font-weight: $font-weight-titulos-pg;
+    font-size: $font-size-titulos-pg-cel;
+    color: $font-color-titulos-pg;
+  }
+  
+  #recetarios {
+    grid-area: novedades;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .title_recetarios {
+    text-align: center;
+    color: $font-color-sbtitulos-pg;
+    margin: $font-margin-sbtitulos-pg;
+    font-family: $font-family-sbtitulos-pg;
+    font-style: $font-style-sbtitulos-pg;
+    font-weight: $font-weight-sbtitulos-pg;
+    font-size: $font-size-sbtitulos-pg-cel;
+  }
+  
+  .recetarios_contenedor {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .recetarios_contenedor .card_recetarios {
+    width: 250px;
+    height: 220px;
+    border: solid 8px;
+    border-color: black;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  
+  .recetarios_contenedor .card_recetarios:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .recetarios_contenedor .card_recetarios img {
+    width: 250px;
+    height: 220px;
+    align-items: center;
+  }
+  
+  .textos_section_recetarios {
+    display: inline-block;
+    width: 100%;
+    min-height: 75px;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    background-color: rgba(226, 216, 204, 0.89);
+    margin-bottom: 1px;
+    padding: 15px;
+  }
+  
+  .textos_section_recetarios h3 {
+    font-family: $font-family-text-pg;
+    font-style: $font-style-text-pg;
+    font-weight: $font-weight-text-pg;
+    font-size: $font-size-text-pg-cel;
+    color: $font-color-text-pg;
+  }
+  
+  .textos_section_recetarios p {
+    font-family: $font-family-ptext-pg;
+    font-style: $font-style-ptext-pg;
+    font-weight: $font-weight-ptext-pg;
+    font-size: $font-size-ptext-pg-cel;
+  }
+  
+  @media (min-width: 768px) {
+    .recetarios_contenedor .card_recetarios {
+      width: 350px;
+      height: 320px;
+      border: solid 12px;
+    }
+  
+    .recetarios_contenedor .card_recetarios img {
+      width: 350px;
+      height: 320px;
+    }
+  
+    .textos_main_recetario h2 {
+      font-size: $font-size-titulos-pg-768;
+    }
+  
+    .title_recetarios {
+      font-size: $font-size-sbtitulos-pg-768;
+    }
+  
+    .textos_section_recetarios h3 {
+      font-size: $font-size-text-pg-768;
+    }
+  
+    .textos_section_recetarios p {
+      font-size: $font-size-ptext-pg-768;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .recetarios_contenedor .card_recetarios {
+      width: 400px;
+      height: 450px;
+      border: solid 12px;
+    }
+  
+    .recetarios_contenedor .card_recetarios img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .textos_main_recetario h2 {
+      font-size: $font-size-titulos-pg-1024;
+    }
+  
+    .title_recetarios {
+      font-size: $font-size-sbtitulos-pg-1024;
+    }
+  
+    .textos_section_recetarios h3 {
+      font-size: $font-size-text-pg-1024;
+    }
+    .textos_section_recetarios p {
+      font-size: $font-size-ptext-pg-1024;
+    }
+  }
+  /****** FIN PAGINA RECETARIO ******/
